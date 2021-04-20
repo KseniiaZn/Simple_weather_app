@@ -1,0 +1,106 @@
+body {
+  background: #9c9c9c;
+}
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+
+input {
+  border-bottom: solid 1px #ffffff;
+  width: 350px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.top-banner .container {
+  text-align: center;
+  margin-top: 110px;
+}
+
+.top-banner .container .heading {
+  font-size: 45px;
+  color: white;
+  margin-bottom: 45px;
+}
+
+ul {
+  list-style: none;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+button {
+  color: white;
+  width: 100px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+button:hover {
+  color: #424242;
+  background-color: #ffffff;
+}
+
+.top-banner form .msg {
+  margin-top: 10px;
+  color: white;
+}
+.info-section .city {
+  position: relative;
+  padding: 40px 10%;
+  border-radius: 20px;
+  color: rgb(51, 51, 51);
+}
+
+.info-section .city::after {
+  content: "";
+  width: 90%;
+  height: 50px;
+  position: absolute;
+  bottom: -12px;
+  left: 5%;
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 20px;
+  background: var(--text_light);
+}
+
+.info-section figcaption {
+}
+
+.info-section .city-temp {
+  color: rgb(230, 227, 227);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.info-section .city sup {
+  font-size: 0.4em;
+}
+
+.info-section .city-icon {
+  width: 80px;
+  height: 80px;
+}
+.info-section {
+  margin: 50px 0 20px;
+}
+
+.info-section .cities {
+  display: grid;
+  grid-gap: 32px 20px;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 10px;
+}
